@@ -1,0 +1,57 @@
+.basic_high
+    height: 500px
+    background-color: $color03
+    padding: 10px 30px 50px 30px
+    color: white
+    position: relative
+    
+    .high_content
+        float: right
+        text-align: right
+        margin-right: 50%
+        h1
+            +header_block
+        
+        h2
+            +text
+            margin-top: -80px
+            
+        p
+            +text
+            
+        #high_shoes
+            position: absolute
+            right: 0
+            bottom: 0
+            z-index: 1
+            
+        #high_arrow
+            position: absolute
+            top: 0
+            left: 55%
+            z-index: 2
+            
+            
+@media screen and (max-width: 39.9375em)            
+            
+    .basic_high
+        height: 450px
+        padding: 0 10px
+        background-image: url(../assets/mobile_high_BG.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: left
+        color: white
+        position: relative
+
+        .high_content
+            float: left
+            text-align: right
+            margin-right: 0
+
+            #high_shoes
+                display: none
+
+            #high_arrow
+                display: none
+    

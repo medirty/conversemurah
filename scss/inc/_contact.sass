@@ -1,0 +1,59 @@
+.contact
+    height: auto
+    padding: 50px 0
+    background-color: $color04
+    text-align: center
+    color: white
+    
+    .sosmed
+        width: 100%
+        
+        ul
+            text-align: center
+            display: flex
+            justify-content: center
+            margin-left: -3%
+            margin-right: auto
+            
+            li
+                text-decoration: none
+                list-style-type: none
+
+                a
+                    color: white
+                    padding: 50px
+                    font-size: 3rem
+                    transition: all ease 0.5s
+                    &:hover 
+                        color: $color01
+                        font-size: 3.5rem
+                    
+    h1
+        +header_block
+        
+    h3
+        +text
+        margin-top: -50px
+        
+        
+@media screen and (max-width: 39.9375em)  
+    
+    .contact
+        height: auto
+        padding: 25px 0 50px 0
+        background-color: $color04
+        text-align: center
+        color: white
+
+        .sosmed
+            width: auto
+
+            ul
+                text-align: center
+                display: flex
+                justify-content: center
+                margin-left: -10%
+
+                li
+                    text-decoration: none
+                    list-style-type: none

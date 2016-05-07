@@ -1,0 +1,76 @@
+.basic_low
+    padding: 0
+    margin: 0
+    position: relative
+    height: 500px
+    background-color: $color02
+    padding: 5px 30px 100px 30px
+    color: white
+    
+    h1
+        +header_block
+        
+    h2
+        +text
+        margin-top: -80px
+        
+    #low_arrow
+        position: absolute
+        left: 5%
+        
+    .basic_low_content
+        margin-top: -100px
+        p
+            +text
+            width: 40%
+            float: right
+            clear: right
+            
+    #low_shoes
+        position: absolute
+        bottom: 0
+        margin-left: auto
+        margin-right: auto
+        left: 30%
+        
+    #low_bg
+        position: absolute
+        right: 0
+        bottom: 5%
+        filter: contrast(200%)
+        filter: brightness(150%)
+        z-index: 0
+        
+@media screen and (max-width: 39.9375em)
+    
+    .basic_low
+        padding: 0
+        margin: 0
+        position: relative
+        height: 500px
+        background-image: url(../assets/mobile_low_BG.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        padding: 5px 10px 0 10px
+        color: white
+
+        h2
+            margin-top: -80px
+
+        #low_arrow
+            display: none
+
+        .basic_low_content
+            margin-top: 0
+            p
+                +text
+                width: auto
+                float: left
+                clear: left
+
+        #low_shoes
+           display: none
+
+        #low_bg
+         display: none

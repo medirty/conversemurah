@@ -1,0 +1,102 @@
+.welcome
+    width: 100%
+    position: relative
+    padding: 5px 0 200px 0
+    background-color: $color01
+    
+    .welcome_intro
+        width: 40%
+        padding: 0 30px
+        
+        h1
+            +header_block
+            margin-top: 30px
+            font-size: 150px
+            line-height: 150px
+        
+        h5
+            margin-bottom: 5%
+            margin-top: -20%
+            +text
+        
+        #welcome_shoes_1
+            position: absolute
+            right: 5%
+            top: 35%
+            z-index: 2
+        
+        #welcome_shoes_2
+            position: absolute
+            left: 5%
+            bottom: -15%
+            z-index: 1
+            
+        #welcome_big_blue_circle
+            position: absolute
+            top: 15%
+            left: 20%
+            z-index: 0
+            
+        #welcome_small_blue_circle
+            position: absolute
+            bottom: 10%
+            right: 10%
+            z-index: 0
+            
+        #welcome_stripe
+            position: absolute
+            right: 0
+            top: 0
+            
+        #welcome_arrow
+            position: absolute
+            bottom: 20%
+            left: 38%
+            z-index: 4
+       
+@media screen and (max-width: 39.9375em)
+    
+    .welcome
+        width: 100%
+        position: relative
+        background-color: none
+        padding: 25px 0 50px 0
+        background-image: url(../assets/mobile_welcome_BG.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+
+        .welcome_intro
+            width: auto
+            padding: 0 15px
+
+            h1
+                +header_block
+                line-height: 70px
+
+            h5
+                margin-bottom: 0
+                margin-top: -5%
+                +text
+
+            #welcome_shoes_1
+                display: none
+
+            #welcome_shoes_2
+                display: none
+
+            #welcome_big_blue_circle
+                display: none
+
+            #welcome_small_blue_circle
+                display: none
+
+            #welcome_stripe
+                display: none
+
+            #welcome_arrow
+                display: none
+
+            
+        
+            

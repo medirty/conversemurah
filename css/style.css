@@ -1,0 +1,462 @@
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 16px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  transition: all ease 1s;
+}
+
+.welcome {
+  width: 100%;
+  position: relative;
+  padding: 5px 0 200px 0;
+  background-color: #7ae6e7;
+}
+
+.welcome .welcome_intro {
+  width: 40%;
+  padding: 0 30px;
+}
+
+.welcome .welcome_intro h1 {
+  font-size: 72px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 30px;
+  font-size: 150px;
+  line-height: 150px;
+}
+
+.welcome .welcome_intro h5 {
+  margin-bottom: 5%;
+  margin-top: -20%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.welcome .welcome_intro #welcome_shoes_1 {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+  z-index: 2;
+}
+
+.welcome .welcome_intro #welcome_shoes_2 {
+  position: absolute;
+  left: 5%;
+  bottom: -15%;
+  z-index: 1;
+}
+
+.welcome .welcome_intro #welcome_big_blue_circle {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  z-index: 0;
+}
+
+.welcome .welcome_intro #welcome_small_blue_circle {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  z-index: 0;
+}
+
+.welcome .welcome_intro #welcome_stripe {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.welcome .welcome_intro #welcome_arrow {
+  position: absolute;
+  bottom: 20%;
+  left: 38%;
+  z-index: 4;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .welcome {
+    width: 100%;
+    position: relative;
+    background-color: none;
+    padding: 25px 0 50px 0;
+    background-image: url(../assets/mobile_welcome_BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .welcome .welcome_intro {
+    width: auto;
+    padding: 0 15px;
+  }
+  .welcome .welcome_intro h1 {
+    font-size: 72px;
+    font-family: "Oswald", sans-serif;
+    line-height: 70px;
+  }
+  .welcome .welcome_intro h5 {
+    margin-bottom: 0;
+    margin-top: -5%;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .welcome .welcome_intro #welcome_shoes_1 {
+    display: none;
+  }
+  .welcome .welcome_intro #welcome_shoes_2 {
+    display: none;
+  }
+  .welcome .welcome_intro #welcome_big_blue_circle {
+    display: none;
+  }
+  .welcome .welcome_intro #welcome_small_blue_circle {
+    display: none;
+  }
+  .welcome .welcome_intro #welcome_stripe {
+    display: none;
+  }
+  .welcome .welcome_intro #welcome_arrow {
+    display: none;
+  }
+}
+
+.about {
+  width: 100%;
+  height: 500px;
+  padding: 50px 0;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.about .about_content {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.about .about_content h1 {
+  font-size: 72px;
+  font-family: "Oswald", sans-serif;
+}
+
+.about .about_content h5 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: -50px;
+}
+
+.about .about_content #about_shoes {
+  position: absolute;
+  right: 0;
+  bottom: -5%;
+  z-index: -1;
+}
+
+.about .about_content #about_arrow {
+  position: absolute;
+  z-index: 4;
+  bottom: 20%;
+  right: 25%;
+}
+
+.about .about_content #about_sign {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0%;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .about {
+    height: auto;
+    padding: 0;
+    position: relative;
+  }
+  .about .about_content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .about .about_content h1 {
+    font-size: 72px;
+    font-family: "Oswald", sans-serif;
+  }
+  .about .about_content h5 {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .about .about_content #about_shoes {
+    display: none;
+  }
+  .about .about_content #about_arrow {
+    display: none;
+  }
+  .about .about_content #about_sign {
+    display: none;
+  }
+}
+
+.basic_low {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 500px;
+  background-color: #6f7da3;
+  padding: 5px 30px 100px 30px;
+  color: white;
+}
+
+.basic_low h1 {
+  font-size: 72px;
+  font-family: "Oswald", sans-serif;
+}
+
+.basic_low h2 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: -80px;
+}
+
+.basic_low #low_arrow {
+  position: absolute;
+  left: 5%;
+}
+
+.basic_low .basic_low_content {
+  margin-top: -100px;
+}
+
+.basic_low .basic_low_content p {
+  font-family: "Josefin Sans", sans-serif;
+  width: 40%;
+  float: right;
+  clear: right;
+}
+
+.basic_low #low_shoes {
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 30%;
+}
+
+.basic_low #low_bg {
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  -webkit-filter: contrast(200%);
+          filter: contrast(200%);
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+  z-index: 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .basic_low {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 500px;
+    background-image: url(../assets/mobile_low_BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5px 10px 0 10px;
+    color: white;
+  }
+  .basic_low h2 {
+    margin-top: -80px;
+  }
+  .basic_low #low_arrow {
+    display: none;
+  }
+  .basic_low .basic_low_content {
+    margin-top: 0;
+  }
+  .basic_low .basic_low_content p {
+    font-family: "Josefin Sans", sans-serif;
+    width: auto;
+    float: left;
+    clear: left;
+  }
+  .basic_low #low_shoes {
+    display: none;
+  }
+  .basic_low #low_bg {
+    display: none;
+  }
+}
+
+.basic_high {
+  height: 500px;
+  background-color: #f35656;
+  padding: 10px 30px 50px 30px;
+  color: white;
+  position: relative;
+}
+
+.basic_high .high_content {
+  float: right;
+  text-align: right;
+  margin-right: 50%;
+}
+
+.basic_high .high_content h1 {
+  font-size: 72px;
+  font-family: "Oswald", sans-serif;
+}
+
+.basic_high .high_content h2 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: -80px;
+}
+
+.basic_high .high_content p {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.basic_high .high_content #high_shoes {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.basic_high .high_content #high_arrow {
+  position: absolute;
+  top: 0;
+  left: 55%;
+  z-index: 2;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .basic_high {
+    height: 450px;
+    padding: 0 10px;
+    background-image: url(../assets/mobile_high_BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    color: white;
+    position: relative;
+  }
+  .basic_high .high_content {
+    float: left;
+    text-align: right;
+    margin-right: 0;
+  }
+  .basic_high .high_content #high_shoes {
+    display: none;
+  }
+  .basic_high .high_content #high_arrow {
+    display: none;
+  }
+}
+
+.contact {
+  height: auto;
+  padding: 50px 0;
+  background-color: #757575;
+  text-align: center;
+  color: white;
+}
+
+.contact .sosmed {
+  width: 100%;
+}
+
+.contact .sosmed ul {
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -3%;
+  margin-right: auto;
+}
+
+.contact .sosmed ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.contact .sosmed ul li a {
+  color: white;
+  padding: 50px;
+  font-size: 3rem;
+  transition: all ease 0.5s;
+}
+
+.contact .sosmed ul li a:hover {
+  color: #7ae6e7;
+  font-size: 3.5rem;
+}
+
+.contact h1 {
+  font-size: 72px;
+  font-family: "Oswald", sans-serif;
+}
+
+.contact h3 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .contact {
+    height: auto;
+    padding: 25px 0 50px 0;
+    background-color: #757575;
+    text-align: center;
+    color: white;
+  }
+  .contact .sosmed {
+    width: auto;
+  }
+  .contact .sosmed ul {
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -10%;
+  }
+  .contact .sosmed ul li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+}
